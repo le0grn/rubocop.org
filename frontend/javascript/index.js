@@ -12,7 +12,7 @@ document.addEventListener("click", (e) => {
   navigator.clipboard.writeText(text).then(() => {
     btn.classList.add("copied")
     setTimeout(() => btn.classList.remove("copied"), 700)
-  })
+  }).catch(() => {})
 })
 
 // Mobile nav toggle

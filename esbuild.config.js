@@ -1,6 +1,6 @@
 import build from "./config/esbuild.defaults.js"
 
-const basePath = process.env.BASE_PATH || ""
+const basePath = (process.env.BASE_PATH || "").replace(/^\/$/, "")
 
 /**
  * @typedef { import("esbuild").BuildOptions } BuildOptions

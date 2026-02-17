@@ -40,19 +40,19 @@ layout: default
     <div class="p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
       <h3 class="font-heading font-semibold text-lg text-heading mb-2">Find &amp; autocorrect offenses</h3>
       <p class="text-muted text-sm leading-relaxed mb-3">Check and automatically fix offenses on your Ruby code based on the Ruby Community Style Guide.</p>
-      <a target="_blank" href="https://docs.rubocop.org/rubocop/usage/autocorrect.html" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">Learn more <%= svg "images/external-link.svg", class:"inline size-4"%></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://docs.rubocop.org/rubocop/usage/autocorrect.html" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">Learn more <%= svg "images/external-link.svg", class:"inline size-4"%></a>
     </div>
 
     <div class="p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
       <h3 class="font-heading font-semibold text-lg text-heading mb-2">Configure cops</h3>
       <p class="text-muted text-sm leading-relaxed mb-3">Edit the .rubocop.yml configuration file to enable/disable certain cops (checks) and alter their behavior.</p>
-      <a target="_blank" href="https://docs.rubocop.org/rubocop/configuration.html" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">Learn more <%= svg "images/external-link.svg", class:"inline size-4"%></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://docs.rubocop.org/rubocop/configuration.html" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">Learn more <%= svg "images/external-link.svg", class:"inline size-4"%></a>
     </div>
 
     <div class="p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
       <h3 class="font-heading font-semibold text-lg text-heading mb-2">Extend with plugins</h3>
       <p class="text-muted text-sm leading-relaxed mb-3">Extend RuboCop with additional cops and formatters. There are many official and third-party extensions available.</p>
-      <a target="_blank" href="https://docs.rubocop.org/rubocop/extensions.html" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">Learn more <%= svg "images/external-link.svg", class:"inline size-4"%></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://docs.rubocop.org/rubocop/extensions.html" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">Learn more <%= svg "images/external-link.svg", class:"inline size-4"%></a>
     </div>
   </div>
 
@@ -99,24 +99,24 @@ layout: default
         <span class="ml-2 font-mono text-xs text-gray-500">.rubocop.yml</span>
       </div>
       <pre class="code-example-body overflow-x-auto grow"><code><span><span class="ln">  1</span><span class="comment"># It's possible to extend RuboCop with additional cops and formatters.</span></span>
-<span><span class="ln">  2</span><span class="comment"># <a target="_blank" href="https://docs.rubocop.org/rubocop/extensions.html">Learn more</a></span></span>
+<span><span class="ln">  2</span><span class="comment"># <a target="_blank" rel="noopener noreferrer" href="https://docs.rubocop.org/rubocop/extensions.html">Learn more</a></span></span>
 <span><span class="ln">  3</span><span class="comment">#</span></span>
 <span><span class="ln">  4</span><span class="comment"># Official Extensions maintained by the RuboCop's team:</span></span>
 <span><span class="ln">  5</span><span class="comment"># (clicking on them leads to their GitHub repo)</span></span>
 <span><span class="ln">  6</span></span>
 <span><span class="ln">  7</span>---</span>
 <span><span class="ln">  8</span><span class="function">plugins:</span></span>
-<span><span class="ln">  9</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-performance">rubocop-performance</a></span>  <span class="comment"># Performance optimization analysis</span></span>
-<span><span class="ln"> 10</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-rails">rubocop-rails</a></span>  <span class="comment"># Rails-specific analysis</span></span>
-<span><span class="ln"> 11</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-rspec">rubocop-rspec</a></span>  <span class="comment"># Rspec-specific analysis</span></span>
-<span><span class="ln"> 12</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-minitest">rubocop-minitest</a></span>  <span class="comment"># Minitest-specific analysis</span></span>
-<span><span class="ln"> 13</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-rake">rubocop-rake</a></span>  <span class="comment"># Rake-specific analysis</span></span>
-<span><span class="ln"> 14</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-sequel">rubocop-sequel</a></span>  <span class="comment"># Code style checking for Sequel gem</span></span>
-<span><span class="ln"> 15</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-thread_safety">rubocop-thread_safety</a></span>  <span class="comment"># Thread-safety analysis</span></span>
-<span><span class="ln"> 16</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-capybara">rubocop-capybara</a></span>  <span class="comment"># Capybara-specific analysis</span></span>
-<span><span class="ln"> 17</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-factory_bot">rubocop-factory_bot</a></span>  <span class="comment"># factory_bot-specific analysis</span></span>
-<span><span class="ln"> 18</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-rspec_rails">rubocop-rspec_rails</a></span>  <span class="comment"># RSpec Rails-specific analysis</span></span>
-<span><span class="ln"> 19</span>  - <span class="string link"><a target="_blank" href="https://github.com/rubocop/rubocop-i18n">rubocop-i18n</a></span>  <span class="comment"># i18n wrapper function analysis (gettext and rails-i18n)</span></span>
+<span><span class="ln">  9</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-performance">rubocop-performance</a></span>  <span class="comment"># Performance optimization analysis</span></span>
+<span><span class="ln"> 10</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-rails">rubocop-rails</a></span>  <span class="comment"># Rails-specific analysis</span></span>
+<span><span class="ln"> 11</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-rspec">rubocop-rspec</a></span>  <span class="comment"># Rspec-specific analysis</span></span>
+<span><span class="ln"> 12</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-minitest">rubocop-minitest</a></span>  <span class="comment"># Minitest-specific analysis</span></span>
+<span><span class="ln"> 13</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-rake">rubocop-rake</a></span>  <span class="comment"># Rake-specific analysis</span></span>
+<span><span class="ln"> 14</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-sequel">rubocop-sequel</a></span>  <span class="comment"># Code style checking for Sequel gem</span></span>
+<span><span class="ln"> 15</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-thread_safety">rubocop-thread_safety</a></span>  <span class="comment"># Thread-safety analysis</span></span>
+<span><span class="ln"> 16</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-capybara">rubocop-capybara</a></span>  <span class="comment"># Capybara-specific analysis</span></span>
+<span><span class="ln"> 17</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-factory_bot">rubocop-factory_bot</a></span>  <span class="comment"># factory_bot-specific analysis</span></span>
+<span><span class="ln"> 18</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-rspec_rails">rubocop-rspec_rails</a></span>  <span class="comment"># RSpec Rails-specific analysis</span></span>
+<span><span class="ln"> 19</span>  - <span class="string link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/rubocop/rubocop-i18n">rubocop-i18n</a></span>  <span class="comment"># i18n wrapper function analysis (gettext and rails-i18n)</span></span>
 <span><span class="ln"> 20</span></span>
 <span class="ln"> 21</span><span class="comment"># Third-party Extensions:</span></span>
 <span class="ln"> 22</span><span class="comment"># <a target="_blank" href="https://docs.rubocop.org/rubocop/extensions.html#third-party-extensions">https://docs.rubocop.org/rubocop/extensions.html#third-party-extensions</a></span></span>
@@ -159,7 +159,7 @@ layout: default
       <% unless release[:sections].empty? %>
       <p class="text-sm text-muted mb-1 md:mb-4"><%= release[:sections].join(", ") %></p>
       <% end %>
-      <a target="_blank" href="<%= release[:url] %>" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">View on GitHub <%= svg "images/external-link.svg", class: "inline size-4" %></a>
+      <a target="_blank" rel="noopener noreferrer" href="<%= release[:url] %>" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-accent-hover">View on GitHub <%= svg "images/external-link.svg", class: "inline size-4" %></a>
     </div>
     <% end %>
   </div>
@@ -174,7 +174,7 @@ layout: default
   <div class="flex justify-center gap-4 max-w-4xl mx-auto flex-wrap mb-12">
     <% 30.times do |i| %>
     <a href="https://opencollective.com/rubocop/individual/<%= i %>/website" class="no-underline opacity-80 hover:opacity-100 transition-opacity" target="_blank" rel="noopener noreferrer">
-      <img src="https://opencollective.com/rubocop/individual/<%= i %>/avatar.svg" class="size-10 md:size-15 rounded-full" loading="lazy" />
+      <img src="https://opencollective.com/rubocop/individual/<%= i %>/avatar.svg" alt="Individual sponsor" class="size-10 md:size-15 rounded-full" loading="lazy" />
     </a>
     <% end %>
   </div>
@@ -183,7 +183,7 @@ layout: default
   <div class="justify-center max-w-5xl mx-auto mb-12 grid grid-cols-5">
     <% 30.times do |i| %>
     <a href="https://opencollective.com/rubocop/organization/<%= i %>/website" class="no-underline opacity-80 hover:opacity-100 transition-opacity" target="_blank" rel="noopener noreferrer">
-      <img src="https://opencollective.com/rubocop/organization/<%= i %>/avatar.svg" class="" loading="lazy" />
+      <img src="https://opencollective.com/rubocop/organization/<%= i %>/avatar.svg" alt="Organization sponsor" loading="lazy" />
     </a>
     <% end %>
   </div>
